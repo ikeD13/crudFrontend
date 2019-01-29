@@ -3,7 +3,7 @@ import Movie from "./movie"
 
 const Movies = (props) => (
   <Fragment>
-    <table class="table">
+    <table className="table">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -16,7 +16,7 @@ const Movies = (props) => (
         </tr>
       </thead>
       <tbody>
-        {props.movies.map(movie=><Movie movie={movie}/>)}
+        {props.movies.map(movie=><Movie key={movie.id} movie={movie}/>)}
       </tbody>
     </table>
   </Fragment>
