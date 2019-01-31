@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 const Header = (props) => (
     <nav className="navbar navbar-light bg-light justify-content-between">
-    <Link className="navbar-brand" to="/">Blake's Movie Reviews</Link>
+    <Link className="navbar-brand" to="/">Ike's Movie Reviews</Link>
     <ul className="navbar-nav mr-auto">
       <li className="nav-item">
         <Link to="/movies">Movie Reviews</Link>
