@@ -1,6 +1,7 @@
 import React, {Fragment} from "react"
 import Movie from "./movie"
 
+
 const Movies = (props) => (
   <Fragment>
     <table className="table">
@@ -16,7 +17,7 @@ const Movies = (props) => (
         </tr>
       </thead>
       <tbody>
-        {props.movies.map(movie=><Movie key={movie.id} movie={movie}/>)}
+        {props.movies.map(movie=><Movie key={movie.id} movie={movie} editBtn = {props.editBtn} delBtn = {props.del}/>)}
       </tbody>
     </table>
   </Fragment>

@@ -53,6 +53,7 @@ class App extends Component {
   }
 
   changeSelected(selected){
+    console.log(selected)
     this.setState({...this.state,selected})
   }
 

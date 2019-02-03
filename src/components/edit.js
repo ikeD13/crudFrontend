@@ -9,6 +9,7 @@ const Edit = (props) => {
     event.preventDefault()
     props.changeHandler(event.target.id,event.target.value)
   }
+ 
   return (
     <div>
       <img src = {`${props.selected.poster_url}`}/>
